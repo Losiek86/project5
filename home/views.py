@@ -1,8 +1,7 @@
 from django.shortcuts import render
-from articles.models import Article
+from pupils.models import Pupil
 
-# Create your views here.
-
+# Create your views here. 
 def index(request):
-    articles = Article.objects.all()
-    return render(request, 'index.html', {"articles": articles})
+    pupils = Pupil.objects.all()
+    return render(request, 'index.html', {"pupils": pupils})

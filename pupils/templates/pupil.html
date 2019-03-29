@@ -3,7 +3,9 @@
 {% load staticfiles %}
 {% block content %}
 <div class="container article">
-    <h2>{{ pupil.name }}</h2>
+    <h1>{{ pupil.name }}</h1>
+    <h2>DoB: {{ pupil.age }}</h2>
+    <h3>{{ pupil.breed }}</h3>
     <div class="article-info">
         Published : {{ pupil.published }}
     </div>
