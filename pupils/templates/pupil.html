@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+{% block content %}
+<div class="container article">
+    <h2>{{ pupil.name }}</h2>
+    <div class="article-info">
+        Published : {{ pupil.published }}
+    </div>
+    <img src="{{ pupil.image.url }}" class="img-rounded img-responsive adjust-img">
+    <div class="article-intro">
+        <p>{{ pupil.content }}</p>
+    </div>
+</div>    
+{% endblock %}

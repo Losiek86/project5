@@ -1,0 +1,218 @@
+/* MAIN */
+
+body {
+    padding-top: 50px;
+    background-color: #eeeeee;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    margin-top: -15px;
+}
+
+nav.navbar.navbar-masthead.navbar-default.navbar-fixed-top {
+    background-image: linear-gradient(#474747, #474747 60%, #474747);
+    border-bottom: none;
+}
+
+footer {
+    background-color: #474747;
+    color: white;
+    padding: 10px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.alert {
+    margin-bottom: none;
+    text-align: center;
+}
+
+.made-by {
+    margin-top: 50px;
+}
+
+hr {
+    border-top: 1px solid #474747;
+}
+
+/* LOGIN & REGISTER */ 
+
+.login-page, .pupils-page {
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -ms-center;
+    margin-top: 50px;
+}
+
+.reg-page {
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -ms-center;
+}
+
+/* INDEX */
+
+.page-header h1 {
+    font-family: 'Monoton', cursive;
+    color: #b90006;
+    word-spacing: 1rem;
+}
+
+.page-header p {
+    font-family: 'Dosis', sans-serif;
+    color: black;
+}
+
+.header img {
+    margin: 0 auto;
+}
+
+.alert {
+    margin-bottom: 0;
+}
+
+.page-header {
+    text-align: center;
+    margin: 0;
+}
+
+.whiter {
+    background-color: white;
+}
+
+.darker {
+    background-color: #d6d6d6;
+}
+
+.page-header h3 {
+    color: black;
+}
+
+.row {
+    margin: 0 auto;
+}
+
+.index-img {
+    max-width: fit-content;
+}
+
+/* PROFILE */
+
+.profile-page {
+    text-align: center;
+    
+}
+
+.profile-image {
+    min-height: 120px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-x;
+    margin-top: 15px;
+}
+
+.profile-function {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.profile-name {
+    font-size: xx-large;
+    color: #58731f;
+}
+
+/* PRODUCT */
+
+.product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+/* ARTICLE */
+
+.adjust-img {
+    max-width: 50%;
+}
+
+.latest, .article {
+    margin-bottom: 30px;
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -ms-center;
+}
+
+.latest-article {
+	font-size: .9em;
+	margin-top: 25px;
+} 
+
+.latest-article img {
+	margin-bottom: 10px;
+}
+
+.custom-link {
+    text-decoration: none;
+}
+
+.custom-btn {
+    background-color: #474747;
+    color: white;
+}
+
+.custom-btn:hover {
+    transition: .5s ease-in-out;
+    color: wheat;
+    background-color: black;
+}
+
+.article-info {
+	margin-bottom: 10px;
+}
+
+.article-intro {
+	margin-top: 20px;
+}
+
+/* COMMENTS */
+
+.comment {
+    text-align: left;
+}
+
+.main-comment {
+    color: black;
+}
+
+/* ------------MEDIA------------- */
+
+/* registration */
+@media screen and (min-width: 992px) {
+    .reg-img {
+        min-height: 472px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .made-by {
+        margin-top: 0;
+    }
+}

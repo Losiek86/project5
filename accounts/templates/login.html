@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+{% block content %}
+<div class="login-page">
+    <form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform col-lg-6 col-md-6 col-sm-12">
+        <fieldset class="form-group">
+            <legend>Login</legend>
+            {% csrf_token %}
+            {{ user_form | as_bootstrap }}
+            
+             <p><a href="{% url 'password_reset' %}">Forgot my password</a></p>
+             
+            <button type="submit" class="btn btn-primary">Login</button>
+        </fieldset>
+    </form>
+    <div class="col-lg-6 col-md-6 col-sm-12 no-padding">
+        <img src="{% static 'img/login-image.png' %}" class="img-responsive" alt="Registration image"></img>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+{% block content %}
+<div class="container article">
+    <h2>{{ article.title }}</h2>
+    <div class="article-info">
+        Published : {{ article.published }}
+    </div>
+    <img src="{{ article.image.url }}" class="img-rounded img-responsive adjust-img">
+    <div class="article-intro">
+        <p>{{ article.content }}</p>
+    </div>
+    <hr>
+    <div class="col-sm-6 col-sm-offset-3 main-comment">
+        <h3>Comments</h3>
+        {% for c in article.comment_set.all %}
+            <div class="comment">
+                <h4><span><em>{{ c.name }}</em></span></h4>
+                <p><em>Published: {{ c.published }}</em></p>
+                <p>{{ c.content }}</p>
+            </div>
+        {% endfor %}
+        <h4><a href="">Add comment</a></h4>
+    </div>
+</div>    
+{% endblock %}

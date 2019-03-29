@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+{% block content %}
+    <div class="container latest">
+    {% for article in articles %}
+            <div class="col-sm-4 latest-article" id="first-art">
+                <div class="latest-article-wrap">
+                    <h5><a class="custom-link" href="/article/{{article.id}}/">{{ article.title }}</a></h5>
+                    <a href="/article/{{article.id}}/"><img src="{{ article.image.url }}" class="img-rounded profile-function"></a>
+                    <p>{{ article.content | truncatewords:11 }}</p>
+                    <a href="/article/{{article.id}}/" class="label label-info pull-right">More</a>
+                </div>
+            </div>
+    {% endfor %}
+    </div>
+{% if articles.count > 0 %}
+
+{% for article in articles %}
+<div class="container article"><!--  Start of article-->
+    <hr>
+    <h2><a class="custom-link" href="/article/{{article.id}}/">{{ article.title }}</a></h2>
+    <div class="article-info">
+        Published : {{ article.published }}
+    </div>
+    <img src="{{ article.image.url }}" class="img-rounded img-responsive adjust-img">
+    <div class="article-intro">
+        <p> {{ article.content | truncatewords:110 }} </p>
+    </div>
+    <a class="btn btn-inverse art-more custom-btn" href="/article/{{article.id}}/">check more</a>
+</div><!-- end of article -->
+{% endfor %}
+
+{% else %}
+<h2>It seems as we dont have any articles yet.</h2>
+<p>Please check back later.</p>
+{% endif %}
+{% endblock %}

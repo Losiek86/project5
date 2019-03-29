@@ -1,0 +1,1 @@
+web: gunicorn dogs_sanctuary.wsgi:application

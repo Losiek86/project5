@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+{% block content %}
+<div class="container article">
+    <h2>{{ product.name }}</h2>
+    <div class="article-info">
+        Price : {{ product.price }} &euro;
+    </div>
+    <img src="{{ product.image.url }}" class="img-rounded img-responsive">
+    <div class="article-intro">
+        <p>{{ product.description }}</p>
+    </div>
+</div>    
+{% endblock %}

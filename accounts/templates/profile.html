@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<div class="profile-page">
+    <div class="profile-image" style="background-image: url('{% static 'img/profile-img.png' %}')"></div>
+    <h2>Hello</h2>
+    <span class="profile-name"><strong>{{ user.username }}</strong></span>
+    <div class="row row-flex">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+            <div class="panel-body">
+                <div class="profile-function" style="background-image: url('{% static 'img/donate.jpg' %}')"></div>
+                <a href="{% url 'pupils' %}"><h2>Our Pupils</h2></a>
+                <p class="product-desciption"></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+            <div class="panel-body">
+                <div class="profile-function" style="background-image: url('{% static 'img/volunteer.jpg' %}')"></div>
+                <a href="#"><h2>Become Volunteer</h2></a>
+                <p class="product-desciption"></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+            <div class="panel-body">
+                <div class="profile-function" style="background-image: url('{% static 'img/shop.jpg' %}')"></div>
+                <a href="{% url 'products' %}"><h2>Shop with Us</h2></a>
+                <p class="product-desciption"></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+            <div class="panel-body">
+                <div class="profile-function" style="background-image: url('{% static 'img/news.png' %}')"></div>
+                <a href="{% url 'articles' %}"><h2>News</h2></a>
+                <p class="product-desciption"></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+            <div class="panel-body">
+                <div class="profile-function" style="background-image: url('{% static 'img/maintenance.jpg' %}')"></div>
+                <a href="#"><h2>Under construction</h2></a>
+                <p class="product-desciption"></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+            <div class="panel-body">
+                <div class="profile-function" style="background-image: url('{% static 'img/logout.png' %}')"></div>
+                <a href="{% url 'logout' %}"><h2>Logout</h2></a>
+                <p class="product-desciption"></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
