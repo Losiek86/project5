@@ -43,6 +43,15 @@ hr {
     border-top: 1px solid #474747;
 }
 
+.faq {
+    text-align: left;
+}
+
+.answer {
+	display:none;
+	padding-left:25px;
+}
+
 /* LOGIN & REGISTER */ 
 
 .login-page, .pupils-page {
@@ -176,6 +185,7 @@ hr {
 .custom-btn {
     background-color: #474747;
     color: white;
+    margin-top: 25px;
 }
 
 .custom-btn:hover {
@@ -200,6 +210,15 @@ hr {
 
 .main-comment {
     color: black;
+}
+
+.comment-form {
+    padding: 50px;
+    text-align: center;
+}
+
+.comment-form label {
+    display: block;
 }
 
 /* ------------MEDIA------------- */

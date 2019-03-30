@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+{% block content %}
+<form action="/article/{{ article.id }}/add_comment/" method="post" class="form-group">
+    {% csrf_token %}
+    <div class="container comment-form">
+    {{ form.as_p }}
+    <input type="submit" class="btn btn-inverse custom-btn" name="submit" value="Add comment">
+    </div>
+</form>
+{% endblock %}

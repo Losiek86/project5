@@ -33,4 +33,4 @@ def add_comment(request, article_id):
     args['article'] = art
     args['form'] = cf
     
-    return render('add_comment.html', args)
+    return render(request, 'add_comment.html', args)

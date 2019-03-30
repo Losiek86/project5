@@ -83,5 +83,12 @@
             </div>    
         </div>
     </footer>
+    <script>
+        $(document).ready(function() {
+            $('.showThis').click(function() {
+                $(this).next('.answer').slideToggle(300);
+            });
+        });
+    </script>
 </body>
 </html>
