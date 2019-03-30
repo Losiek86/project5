@@ -7,7 +7,7 @@ class Article(models.Model):
     published = models.DateTimeField(verbose_name = "Publish date")
     image = models.FileField(upload_to="images/")
     
-    def __unicode__(self):
+    def __str__(self):
         return self.title
         
 class Comment(models.Model):
@@ -16,5 +16,5 @@ class Comment(models.Model):
     published = models.DateTimeField(verbose_name = "Publish date")
     article = models.ForeignKey(Article)
     
-    def __unicode__(self):
+    def __str__(self):
         return self.name

@@ -10,5 +10,5 @@ class Pupil(models.Model):
     age = models.DateField(verbose_name = "Date of Birth")
     breed = models.TextField(verbose_name="Breed")
     
-    def __unicode__(self):
-        return self.title
+    def __str__(self):
+        return self.name

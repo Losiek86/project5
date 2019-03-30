@@ -20,8 +20,9 @@
                 <p><em>Published: {{ c.published }}</em></p>
                 <p>{{ c.content }}</p>
             </div>
+            <hr>
         {% endfor %}
-        <h4><a href="/article/{{ article.id }}/add_comment">Add comment</a></h4>
+        <h4><a href="/article/{{ article.id }}/add_comment" class="btn btn-inverse custom-btn">Add comment</a></h4>
     </div>
 </div>    
 {% endblock %}

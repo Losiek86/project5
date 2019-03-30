@@ -5,6 +5,10 @@ body {
     background-color: #eeeeee;
 }
 
+.main-window {
+    min-height: 80vh;
+}
+
 .navbar-brand img {
     width: 50px;
     height: 50px;
@@ -50,6 +54,11 @@ hr {
 .answer {
 	display:none;
 	padding-left:25px;
+}
+
+.checkout-page {
+    margin: 50px;
+    text-align: center;
 }
 
 /* LOGIN & REGISTER */ 
