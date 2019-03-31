@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'storages',
     'articles',
     'pupils',
+    'donations',
 ]
 
 MIDDLEWARE = [
@@ -140,10 +141,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 
-#AWS_S3_OBJECT_PARAMETERS = {
-#    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-#    'CacheControl': 'max-age=94608000',
-#}
+AWS_S3_OBJECT_PARAMETERS = {
+    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+    'CacheControl': 'max-age=94608000',
+}
 
 AWS_STORAGE_BUCKET_NAME = 'dogsanctuary'
 AWS_S3_REGION_NAME = 'eu-west-1'

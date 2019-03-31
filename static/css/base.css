@@ -230,6 +230,19 @@ hr {
     display: block;
 }
 
+/* DONATE */
+
+.inprogres {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.donate-btn {
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    width: -ms-fill-available;
+}
+
 /* ------------MEDIA------------- */
 
 /* registration */

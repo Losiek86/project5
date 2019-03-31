@@ -22,6 +22,7 @@ from checkout import urls as urls_checkout
 from products import urls as urls_products 
 from articles import urls as urls_articles
 from pupils import urls as urls_pupils
+from donations import urls as urls_donations
 from django.views import static
 from .settings import MEDIA_ROOT
 
@@ -34,5 +35,6 @@ urlpatterns = [
     url(r'^products/', include(urls_products)),
     url(r'^article/', include(urls_articles)),
     url(r'^pupils/', include(urls_pupils)),
+    url(r'^donations/', include(urls_donations)),
     url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]
