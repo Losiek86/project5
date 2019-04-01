@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'articles',
     'pupils',
     'donations',
+    'volo'
 ]
 
 MIDDLEWARE = [

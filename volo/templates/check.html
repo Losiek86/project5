@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+{% block content %}
+<div class="container">
+    {% if volo.count > 0 %}
+        {% for v in volo %}
+        <table class="table table-bordered">
+            <caption>Information</caption>
+            <tr>
+                <th>Userame :</th>
+                <th>Date :</th>
+                <th>Status :</th>
+            </tr>
+            <tr>
+                <td>{{ v.name }}</td>
+                <td>{{ v.date }}</td>
+                <td>{{ v.status }}</td>
+            </tr>
+        </table>
+        {% endfor %}
+    {% else %}
+        <h2>Hey</h2>
+        <p>we still waiting for You.</p>
+    {% endif %}
+</div>
+{% endblock %}

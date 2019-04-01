@@ -23,6 +23,7 @@ from products import urls as urls_products
 from articles import urls as urls_articles
 from pupils import urls as urls_pupils
 from donations import urls as urls_donations
+from volo import urls as urls_volo
 from django.views import static
 from .settings import MEDIA_ROOT
 
@@ -36,5 +37,6 @@ urlpatterns = [
     url(r'^article/', include(urls_articles)),
     url(r'^pupils/', include(urls_pupils)),
     url(r'^donations/', include(urls_donations)),
+    url(r'^volo/', include(urls_volo)),
     url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]
